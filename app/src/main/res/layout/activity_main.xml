@@ -15,6 +15,7 @@
         android:id="@+id/result_button"
         android:layout_width="100dp"
         android:layout_height="48dp"
-        android:text="Result"/>
+        android:text="Result"
+        android:onClick="resultClick"/>
 
 </LinearLayout>
