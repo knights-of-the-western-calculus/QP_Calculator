@@ -5,6 +5,13 @@ This Android app uses the newly made QP system to rank players based on quiz res
 
 (From L and F, to A. Have fun you boring bastard!)
 
+## Development Goals (More Soon)
+
+- [ ] Fully complete ducumentation
+- [ ] Build basic framework layout
+- [x] Build basic framework code
+- [ ] Make it look pretty
+
 ## Installation Guide
 For the installation, you will need an Android phone, a USB cable and Android Studio installed in your computer. **Keep in mind that these are guidelines and that you may use another method if you so choose.**
 
