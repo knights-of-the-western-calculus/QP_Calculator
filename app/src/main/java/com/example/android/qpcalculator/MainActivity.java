@@ -19,13 +19,16 @@ public class MainActivity extends AppCompatActivity {
     int result2 = 20;
 
     // Display for result
-    public void quantity(int score) {
+    public void quantity(double score) {
         TextView scoreView = (TextView) findViewById(R.id.result_text_view);
         scoreView.setText(String.valueOf(score));
     }
 
     // Set button behaviour
     public void resultClick(View view) {
+
+        double finalResult = qpEquation();
+        quantity(finalResult);
     }
 
     // QP equation
