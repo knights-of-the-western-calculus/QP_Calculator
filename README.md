@@ -8,9 +8,11 @@ This Android app uses the newly made QP system to rank players based on quiz res
 ## Development Goals (More Soon)
 
 - [ ] Fully complete documentation
-- [ ] Build basic framework layout
+- [x] Build basic framework layout
 - [x] Build basic framework code
 - [ ] Make it look pretty
+- [ ] Add option to change number of questions
+- [ ] Make app icon
 
 ## Installation Guide
 For the installation, you will need an Android phone, a USB cable and Android Studio installed in your computer. **Keep in mind that these are guidelines and that you may use another method if you so choose.**
