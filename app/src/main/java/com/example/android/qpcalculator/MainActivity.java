@@ -8,16 +8,16 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int score1;
+    int score2;
+    int result1;
+    int result2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    int score1 = 2000;
-    int score2 = 1056;
-    int result1 = 24;
-    int result2 = 20;
 
     // Display for result
     public void quantity(double score) {
@@ -53,9 +53,4 @@ public class MainActivity extends AppCompatActivity {
                 (score1 * (0.1+((result1 - result2)/40)/10))-(score2*(0.1+((result2-result1)/40)/10));
         return finalFlash;
     }
-
-
-
-
-
 }
