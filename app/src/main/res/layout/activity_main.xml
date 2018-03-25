@@ -5,17 +5,72 @@
     android:layout_margin="8dp"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/result_text_view"
-        android:text="Some Text"/>
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person1"/>
+
+        <EditText
+            android:id="@+id/score1_edit_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/score" />
+
+        <EditText
+            android:id="@+id/result1_edit_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/result" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person2"/>
+
+        <EditText
+            android:id="@+id/score2_edit_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/score" />
+
+        <EditText
+            android:id="@+id/result2_edit_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/result" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/result_button"
         android:layout_width="100dp"
         android:layout_height="48dp"
-        android:text="Result"
-        android:onClick="resultClick"/>
+        android:onClick="resultClick"
+        android:text="@string/result_button"/>
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_text" />
+
+
 
 </LinearLayout>
