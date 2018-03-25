@@ -19,13 +19,15 @@
             android:id="@+id/score1_edit_view"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:hint="@string/score" />
+            android:hint="@string/score"
+            android:inputType="phone"/>
 
         <EditText
             android:id="@+id/result1_edit_view"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:hint="@string/result" />
+            android:hint="@string/result"
+            android:inputType="phone"/>
 
     </LinearLayout>
 
@@ -48,13 +50,15 @@
             android:id="@+id/score2_edit_view"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:hint="@string/score" />
+            android:hint="@string/score"
+            android:inputType="phone"/>
 
         <EditText
             android:id="@+id/result2_edit_view"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:hint="@string/result" />
+            android:hint="@string/result"
+            android:inputType="phone"/>
 
     </LinearLayout>
 
