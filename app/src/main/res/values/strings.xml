@@ -6,4 +6,7 @@
     <string name="person2">Person 2</string>
     <string name="score">Score</string>
     <string name="result">Result</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="question">20</string>
 </resources>
