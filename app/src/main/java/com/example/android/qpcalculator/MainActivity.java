@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     int score2;
     int result1;
     int result2;
+    int questionNumber = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +21,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Display for result
-    public void quantity(double score) {
+    public void result(double score) {
         TextView scoreView = (TextView) findViewById(R.id.result_text_view);
         scoreView.setText(String.valueOf(score));
     }
 
-    // Set button behaviour
+    // Display for number of questions
+    public void questionNumberDisplay(int number) {
+        TextView questionView = (TextView) findViewById(R.id.question_text_view);
+        questionView.setText(String.valueOf(number));
+    }
+
+    // Set behaviour for increment and decrement
+    public void decrementClick(View view) {
+        if (questionNumber > 1) {
+            questionNumber = questionNumber - 1;
+            questionNumberDisplay(questionNumber);
+        } else {
+            return;
+        }
+    }
+
+    public void incrementClick(View view) {
+        questionNumber = questionNumber + 1;
+        questionNumberDisplay(questionNumber);
+    }
+
+    // Set button behaviour for result click
     public void resultClick(View view) {
         EditText score1edit = (EditText) findViewById(R.id.score1_edit_view);
         int a = Integer.parseInt(score1edit.getText().toString());
@@ -44,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         result2 = d;
 
         double finalResult = qpEquation();
-        quantity(finalResult);
+        result(finalResult);
     }
 
     // QP equation
