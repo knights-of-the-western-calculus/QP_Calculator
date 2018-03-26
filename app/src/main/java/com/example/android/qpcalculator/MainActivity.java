@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     // QP equation
     public double qpEquation() {
         double finalFlash =
-                (score1 * (0.1+((result1 - result2)/40)/10))-(score2*(0.1+((result2-result1)/40)/10));
+                (score1 * (0.1+((result1 - result2)/questionNumber)/10))-(score2*(0.1+((result2-result1)/questionNumber)/10));
         return finalFlash;
     }
 }
