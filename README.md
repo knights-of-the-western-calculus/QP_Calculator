@@ -3,8 +3,6 @@ The not official quiz tounament calculator!
 
 This Android app uses the newly made QP system to rank players based on quiz results and disparity. The perfect tool for those wanting to take their quizzing to the next level. Created by the Nerds of the Emerald Isle.
 
-(From L and F, to A. Have fun you boring bastard!)
-
 ## Development Goals
 
 - [x] Fully complete documentation
