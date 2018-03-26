@@ -44,7 +44,7 @@ Lucca Tavares; Lead Programmer (luccaprojects@gmail.com)
 Fionn G.; Design and Code Contribution
 
 ## License
-QP Calculator is released under the [MIT License](QP_Calculator/LICENSE)
+QP Calculator is released under the [MIT License](https://github.com/NS-tech-division/QP_Calculator/blob/master/LICENSE)
 
 ## Credits
 Adam R.; QP System Creator
