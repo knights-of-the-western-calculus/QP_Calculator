@@ -49,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Set button behaviour for result click
     public void resultClick(View view) {
+        double finalResult = qpEquation();
+        result(finalResult);
+    }
+
+    // QP equation
+    public double qpEquation() {
         EditText score1edit = (EditText) findViewById(R.id.score1_edit_view);
         int a = Integer.parseInt(score1edit.getText().toString());
         score1 = a;
@@ -65,14 +71,8 @@ public class MainActivity extends AppCompatActivity {
         int d = Integer.parseInt(result2edit.getText().toString());
         result2 = d;
 
-        double finalResult = qpEquation();
-        result(finalResult);
-    }
+        double finalFlash = (score1 * (0.1+(((result1 - result2)/questionNumber)/10)))-(score2*(0.1+(((result2-result1)/questionNumber)/10)));
 
-    // QP equation
-    public double qpEquation() {
-        double finalFlash =
-                (score1 * (0.1+((result1 - result2)/questionNumber)/10))-(score2*(0.1+((result2-result1)/questionNumber)/10));
         return finalFlash;
     }
 }

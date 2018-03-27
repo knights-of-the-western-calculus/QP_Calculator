@@ -3,12 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             style="@style/HeaderStyle"
@@ -33,16 +36,21 @@
     </LinearLayout>
 
     <View
+        android:layout_gravity="center_horizontal"
         android:layout_width="200dp"
         android:layout_height="1dp"
         android:background="#000000"/>
 
     <LinearLayout
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
 
         <TextView
+            style="@style/HeaderStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/person2"/>
@@ -64,11 +72,16 @@
     </LinearLayout>
 
     <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        style="@style/HeaderStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_title"/>
 
     <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -97,6 +110,8 @@
     </LinearLayout>
 
     <Button
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/result_button"
         android:layout_width="100dp"
         android:layout_height="48dp"
@@ -104,6 +119,7 @@
         android:text="@string/result_button"/>
 
     <TextView
+        android:layout_gravity="center_horizontal"
         android:id="@+id/result_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
