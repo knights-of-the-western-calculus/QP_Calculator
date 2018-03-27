@@ -92,6 +92,7 @@
             android:text="@string/decrement"/>
 
         <TextView
+            style="@style/ResultStyle"
             android:id="@+id/question_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -119,6 +120,7 @@
         android:text="@string/result_button"/>
 
     <TextView
+        style="@style/ResultStyle"
         android:layout_gravity="center_horizontal"
         android:id="@+id/result_text_view"
         android:layout_width="wrap_content"
