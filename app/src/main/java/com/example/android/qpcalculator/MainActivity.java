@@ -8,11 +8,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score1;
-    int score2;
-    int result1;
-    int result2;
-    int questionNumber = 20;
+    double score1;
+    double score2;
+    double result1;
+    double result2;
+    double questionNumber = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Display for number of questions
-    public void questionNumberDisplay(int number) {
+    public void questionNumberDisplay(double number) {
         TextView questionView = (TextView) findViewById(R.id.question_text_view);
         questionView.setText(String.valueOf(number));
     }
@@ -56,23 +56,37 @@ public class MainActivity extends AppCompatActivity {
     // QP equation
     public double qpEquation() {
         EditText score1edit = (EditText) findViewById(R.id.score1_edit_view);
-        int a = Integer.parseInt(score1edit.getText().toString());
+        double a = Integer.parseInt(score1edit.getText().toString());
         score1 = a;
 
         EditText score2edit = (EditText) findViewById(R.id.score2_edit_view);
-        int b = Integer.parseInt(score2edit.getText().toString());
+        double b = Integer.parseInt(score2edit.getText().toString());
         score2 = b;
 
         EditText result1edit = (EditText) findViewById(R.id.result1_edit_view);
-        int c = Integer.parseInt(result1edit.getText().toString());
+        double c = Integer.parseInt(result1edit.getText().toString());
         result1 = c;
 
         EditText result2edit = (EditText) findViewById(R.id.result2_edit_view);
-        int d = Integer.parseInt(result2edit.getText().toString());
+        double d = Integer.parseInt(result2edit.getText().toString());
         result2 = d;
 
-        double finalFlash = (score1 * (0.1+(((result1 - result2)/questionNumber)/10)))-(score2*(0.1+(((result2-result1)/questionNumber)/10)));
+        // double finalFlash = (score1 * (0.1+(((result1 - result2)/questionNumber)/10)))-(score2*(0.1+(((result2-result1)/questionNumber)/10)));
 
-        return finalFlash;
+       double e = result1 - result2;
+       double f = e / (double)questionNumber;
+       double g = f / 10;
+       double h = 0.1 + g;
+       double i = h * score2;
+
+       double j = result2 - result1;
+       double k = j / (double)questionNumber;
+       double l = k / 10;
+       double m = 0.1 + l;
+       double n = score1 * m;
+
+       double finalFlash = n - i;
+
+       return finalFlash;
     }
 }
