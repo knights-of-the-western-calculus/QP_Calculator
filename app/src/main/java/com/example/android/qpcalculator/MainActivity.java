@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     double score2;
     double result1;
     double result2;
-    double questionNumber = 20;
+    double questionNumber = 40;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
