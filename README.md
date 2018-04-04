@@ -8,7 +8,7 @@ This Android app uses the newly made QP system to rank players based on quiz res
 - [x] Fully complete documentation
 - [x] Build basic framework layout
 - [x] Build basic framework code
-- [ ] Make it look pretty
+- [x] Make it look pretty
 - [x] Add option to change number of questions
 - [ ] Make app icon
 
