@@ -8,6 +8,6 @@
     <string name="result">Result</string>
     <string name="decrement">-</string>
     <string name="increment">+</string>
-    <string name="question">20</string>
+    <string name="question">40</string>
     <string name="question_title">Number of Questions</string>
 </resources>
