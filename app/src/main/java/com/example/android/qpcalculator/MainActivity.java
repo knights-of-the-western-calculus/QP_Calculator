@@ -85,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
        double m = 0.1 + l;
        double n = score1 * m;
 
-       double finalFlash = n - i;
+       // Changed double to int
+       int finalFlash = (int) (n - i);
 
        return finalFlash;
     }
